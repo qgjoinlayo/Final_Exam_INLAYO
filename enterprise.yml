@@ -1,5 +1,5 @@
 ---
-name: Setup enterprise service and monitoring
+- name: Setup enterprise service and monitoring
   hosts: all
   become: true
   vars_files:

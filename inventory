@@ -1,10 +1,11 @@
 [file_server]
-192.168.56.101 ansible_user=lombogsysad2 ansible_password=123
+192.168.56.101 ansible_user=INLAYO ansible_password=changeme
 
 [db_servers]
-192.168.56.102 ansible_user=lombogsysad2 ansible_password=123
-192.168.56.103 ansible_user=lombogsysad2 ansible_password=123
+192.168.56.102 ansible_user=INLAYO ansible_password=changeme
+192.168.56.103 ansible_user=INLAYO ansible_password=changeme
 
 [web_servers]
-192.168.56.104 ansible_user=lombogsysad2 ansible_password=123
+192.168.56.104 ansible_user=INLAYO ansible_password=changeme
+
 

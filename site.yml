@@ -1,0 +1,11 @@
+--- 
+- name: SETUP ENTERPRISE AND MONITORING TOOLS
+  hosts: all
+  become: true
+  vars_files:
+    - ./config.yml
+
+  roles:
+    - apache
+    - common
+    - nodeexporter

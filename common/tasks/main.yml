@@ -1,0 +1,18 @@
+---
+- name: Update APT Package Cache in Ubuntu
+  ansible.builtin.apt:
+    update_cache: yes
+  when: ansible_os_family == 'Debian'
+
+- name: Update APT Package Cache in CentOS
+  ansible.builtin.dnf:
+    update_cache: yes
+  when: ansible_os_family == 'RedHat'
+
+- name: Update M O T D 
+  ansible.builtin.copy:
+    dest: /etc/motd
+    content: "Ansible Managed by {{ motd_user | default('unknown_user') }}\n"
+    owner: root
+    group: root
+    mode: '0644'
